@@ -1,0 +1,11 @@
+{
+  "name": "things",
+  "version": "0.1.0",
+  "description": "Things.app task management — query tasks, projects, areas, and tags",
+  "author": {
+    "name": "Nelson Love"
+  },
+  "repository": "https://github.com/nelsonlove/things-py",
+  "license": "MIT",
+  "keywords": ["things", "tasks", "gtd"]
+}
