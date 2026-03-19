@@ -10,20 +10,20 @@ Read-only access to Things.app via the `things` CLI.
 ## Commands
 
 ```bash
-things tasks                          # all incomplete tasks
-things tasks --project UUID           # tasks in a project
-things tasks --tag "Work"             # tasks with a tag
-things tasks --search "keyword"       # search tasks
-things tasks --status completed       # completed tasks
-things tasks --all                    # all statuses
+${CLAUDE_PLUGIN_ROOT}/bin/run things tasks                          # all incomplete tasks
+${CLAUDE_PLUGIN_ROOT}/bin/run things tasks --project UUID           # tasks in a project
+${CLAUDE_PLUGIN_ROOT}/bin/run things tasks --tag "Work"             # tasks with a tag
+${CLAUDE_PLUGIN_ROOT}/bin/run things tasks --search "keyword"       # search tasks
+${CLAUDE_PLUGIN_ROOT}/bin/run things tasks --status completed       # completed tasks
+${CLAUDE_PLUGIN_ROOT}/bin/run things tasks --all                    # all statuses
 
-things projects                       # incomplete projects
-things projects --all                 # all projects
+${CLAUDE_PLUGIN_ROOT}/bin/run things projects                       # incomplete projects
+${CLAUDE_PLUGIN_ROOT}/bin/run things projects --all                 # all projects
 
-things areas                          # all areas
-things tags                           # all tags
-things inbox                          # inbox tasks
-things today                          # today's tasks
+${CLAUDE_PLUGIN_ROOT}/bin/run things areas                          # all areas
+${CLAUDE_PLUGIN_ROOT}/bin/run things tags                           # all tags
+${CLAUDE_PLUGIN_ROOT}/bin/run things inbox                          # inbox tasks
+${CLAUDE_PLUGIN_ROOT}/bin/run things today                          # today's tasks
 ```
 
 ## JSON mode
@@ -31,9 +31,9 @@ things today                          # today's tasks
 Always use `--json` for structured output:
 
 ```bash
-things --json tasks
-things --json today
-things --json inbox
+${CLAUDE_PLUGIN_ROOT}/bin/run things --json tasks
+${CLAUDE_PLUGIN_ROOT}/bin/run things --json today
+${CLAUDE_PLUGIN_ROOT}/bin/run things --json inbox
 ```
 
 Returns: `{"status": "ok", "data": [...]}`
